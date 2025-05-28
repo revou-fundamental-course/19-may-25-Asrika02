@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Konversi Suhu</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Konversi Suhu</h1>
+    
+    <div class="input-group">
+      <label for="temperature">Masukkan Suhu:</label>
+      <input type="number" id="temperature" placeholder="Contoh: 25" />
+    </div>
+
+    <div class="input-group">
+      <label for="unit">Dari:</label>
+      <select id="unit">
+        <option value="celcius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+
+    <button onclick="convertTemperature()">Konversi</button>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
